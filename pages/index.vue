@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div class="main">
     <h1>To-Do App</h1>
     <div class="create-new">
       <input
@@ -17,7 +17,7 @@
         :task="task"
       />
     </div>
-  </main>
+  </div>
 </template>
 
 <script>

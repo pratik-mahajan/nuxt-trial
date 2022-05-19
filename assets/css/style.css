@@ -2,47 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-    background-color: rgb(38, 35, 54);
-    color: #FFF;
+    background-color: white;
+    color: black;
 }
 
-main {
+/* .main {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+} */
+
+.main {
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-main h1 {
+.main h1 {
+    text-align: center;
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 0.5rem;
 }
 
-main h1~p {
+.main h1~p {
     margin-bottom: 2rem;
 }
 
-main .create-new {
+.main .create-new {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 480px;
 }
 
-main .create-new input {
+.main .create-new input {
     appearance: none;
     border: none;
     outline: none;
     border-bottom: 1px solid #FFF;
     background-color: transparent;
-    color: #FFF;
+    color: black;
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -50,18 +61,18 @@ main .create-new input {
     transition: 0.4s;
 }
 
-main .create-new input:focus {
-    border-bottom-color: rgb(47, 214, 111);
+.main .create-new input:focus {
+    border-bottom-color: black;
 }
 
-main .create-new button {
+.main .create-new button {
     appearance: none;
     border: none;
     outline: none;
-    background-color: rgb(47, 214, 111);
+    background-color: black;
     text-transform: uppercase;
     font-weight: bold;
-    color: #000;
+    color: white;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -69,34 +80,35 @@ main .create-new button {
     cursor: pointer;
 }
 
-main .tasks {
+.main .tasks {
     width: 100%;
     max-width: 480px;
     margin-top: 2rem;
 }
 
-main .tasks .task {
+.main .tasks .task {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(52, 47, 78);
+    background-color: white;
+    border: 1px solid black;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 
-main .tasks .task .buttons {
+.main .tasks .task .buttons {
     min-width: fit-content;
 }
 
-main .tasks .task button {
+.main .tasks .task button {
     appearance: none;
     border: none;
     outline: none;
-    background-color: rgb(47, 214, 111);
+    background-color: black;
     text-transform: uppercase;
     font-weight: bold;
-    color: #000;
+    color: white;
     font-size: 0.875rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -104,8 +116,8 @@ main .tasks .task button {
     cursor: pointer;
 }
 
-main .tasks .task button.delete {
-    background-color: crimson;
+.main .tasks .task button.delete {
+    background-color: red;
     color: #EEE;
 }
 
